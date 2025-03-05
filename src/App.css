@@ -4,3 +4,9 @@
   bottom: 0;
   left: -690px;
 }
+@media screen and (max-width: 620px) {
+  .patt {
+    left: -320px;
+    transform: rotate(120deg) scale(1.2);
+  }
+}
