@@ -14,7 +14,7 @@ function Home() {
             <div>
                 <h1 className="text-lg text-cyan-500">Hi, I am</h1>
                 <h1 className="text-2xl text-cyan-300">Ibikunle Peace</h1>
-                <h1 className="text-4xl md:text-[40px] font-black text-white leading-[1.1]">Graphics<br /> Designer & Frontend <br /> Developer</h1>
+                <h1 className="text-4xl leading-[1.2] md:text-[40px] font-black text-white leading-[1.1]">Graphics<br /> Designer & Frontend <br /> Developer</h1>
                 
                 
             </div>

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import './App.css'
-import pattern from './Background Pattern 1.png'
+import pattern from './bgpat.svg'
 import Nav from "./Components/Nav";
 import Home from "./Components/Home";
 import AboutPage from "./Components/AboutPage";

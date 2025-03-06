@@ -1,12 +1,12 @@
 .patt {
   transform: rotate(120deg) scale(1.1);
   position: absolute;
-  bottom: 0;
+  bottom: 100px;
   left: -690px;
 }
 @media screen and (max-width: 620px) {
   .patt {
-    left: -320px;
+    left: -300px;
     transform: rotate(120deg) scale(1.2);
   }
 }

@@ -26,7 +26,7 @@ function Nav() {
      };
    }, []);
  
-   const nav = !scrolled ? 600 : 500
+   const nav = !scrolled ? 500 : 300
  
    return (
  <div>
@@ -36,12 +36,12 @@ function Nav() {
              
              {/* Desktop Menu */}
              <ul className="hidden md:flex gap-5 ">
-               <li><a href="#home" className={ ` text-cyan-${nav} hover:text-cyan-300`}>Home</a></li>
-               <li><a href="#aboutMe" className={`text-cyan-${nav} hover:text-cyan-300`} >About Me</a></li>
-               <li><a href="#services" className={`text-cyan-${nav} hover:text-cyan-300`} >Services</a></li>
-               <li><a href="#projects" className={`text-cyan-${nav} hover:text-cyan-300`} >Projects</a></li>
-               <li><a href="#testimonial" className={`text-cyan-${nav} hover:text-cyan-300`} >Testimonial</a></li>
-               <li><a href="#contact" className={`text-cyan-${nav} hover:text-cyan-300`} >Contact</a></li>
+               <li><a href="#home" className={ ` text-cyan-${nav} hover:text-cyan-200`}>Home</a></li>
+               <li><a href="#aboutMe" className={`text-cyan-${nav} hover:text-cyan-200`} >About Me</a></li>
+               <li><a href="#services" className={`text-cyan-${nav} hover:text-cyan-200`} >Services</a></li>
+               <li><a href="#projects" className={`text-cyan-${nav} hover:text-cyan-200`} >Projects</a></li>
+               <li><a href="#testimonial" className={`text-cyan-${nav} hover:text-cyan-200`} >Testimonial</a></li>
+               <li><a href="#contact" className={`text-cyan-${nav} hover:text-cyan-200`} >Contact</a></li>
              </ul>
      
              {/* Mobile Menu Button */}
@@ -63,17 +63,17 @@ function Nav() {
                  <X size={25} className="text-cyan-300 hover:text-cyan-100"/>
                </button>
                <ul className="mt-12 flex flex-col gap-6">
-               <li><a href="#home" className="text-cyan-900 hover:text-cyan-300">Home</a></li>
-               <li><a href="#aboutMe" className="text-cyan-900 hover:text-cyan-300">About Me</a></li>
-               <li><a href="#services" className="text-cyan-900 hover:text-cyan-300">Services</a></li>
-               <li><a href="#projects" className="text-cyan-900 hover:text-cyan-300">Projects</a></li>
-               <li><a href="#testimonial" className="text-cyan-900 hover:text-cyan-300">Testimonial</a></li>
-               <li><a href="#contact" className="text-cyan-900 hover:text-cyan-300">Contact</a></li>
+               <li><a href="#home" className="text-cyan-900 hover:text-cyan-200">Home</a></li>
+               <li><a href="#aboutMe" className="text-cyan-900 hover:text-cyan-200">About Me</a></li>
+               <li><a href="#services" className="text-cyan-900 hover:text-cyan-200">Services</a></li>
+               <li><a href="#projects" className="text-cyan-900 hover:text-cyan-200">Projects</a></li>
+               <li><a href="#testimonial" className="text-cyan-900 hover:text-cyan-200">Testimonial</a></li>
+               <li><a href="#contact" className="text-cyan-900 hover:text-cyan-200">Contact</a></li>
                </ul>
              </motion.div>
            )}
          </nav>
- 
+
  
  
      </div>
