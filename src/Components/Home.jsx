@@ -1,4 +1,5 @@
 import React from 'react'
+import './Home.css'
 import { motion } from "framer-motion";
 
 function Home() {
@@ -9,7 +10,7 @@ function Home() {
                animate={{ y: "0%",opacity:1 }} 
                exit={{ y: "100%" }} 
                transition={{ type: "tween", duration: 0.3 }}
-               className="relative pt-50p text-white top-0 right-0 w-full overflow-hidden h-screen bg-[#00000000] flex justify-between items-center "
+               className="flexbx relative pt-50p text-white top-0 right-0 w-full overflow-hidden flex-col h-screen bg-[#00000000] flex md:flex-row justify-between items-center "
              >
             <div>
                 <h1 className="text-lg text-cyan-500">Hi, I am</h1>
