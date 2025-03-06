@@ -1,12 +1,16 @@
-.patt {
-  transform: rotate(120deg) scale(1.1);
-  position: absolute;
+.patt{
+  transform: rotate(120deg) scale(1.1); 
+  position: fixed;
   bottom: 100px;
   left: -690px;
+
 }
 @media screen and (max-width: 620px) {
   .patt {
     left: -300px;
-    transform: rotate(120deg) scale(1.2);
+    transform: rotate(120deg) scale(1.3);
   }
 }
+ body{
+  background-color: #032b44;
+ }
