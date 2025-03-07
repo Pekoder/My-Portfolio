@@ -1,4 +1,64 @@
 .flexbx{
-    justify-content: space-evenly;
+    justify-content: space-around;
     z-index: 2;
+    /* margin-top: 20px; */
+}
+.homePageScreen .bio{
+    letter-spacing: 0.5px;
+    line-height: 1.125;
+    width: 65%;
+margin-top: 10px;
+}
+.homePageScreen button{
+    margin-top: 30px;
+    padding: 9px 18px;
+    border: 1px solid #4AB7F2 ;
+    border-radius: 5px;
+    color: #4AB7F2;
+}
+.homePageScreen button:hover{
+    background-color: #4AB7F2;
+    color: white;
+}
+.profilePic{
+    
+}
+.profilePic .cover{
+    width: 60%;
+    height: 80px;
+    background-color:#4AB7F2;
+    z-index: 20;
+    position:absolute;
+    bottom: 0;
+    border-radius: 10px;
+    /* top: 0; */
+}
+.profilePic img{
+    transform: scale(1.3);
+    position: relative;
+    bottom: -80px;
+    
+}
+@media screen and (max-width: 720px) {
+    .flexbx{
+        justify-content:right;
+    }
+    .profilePic .cover{
+        width: 100%;
+    }
+    .profilePic img{
+        transform: scale(1.1);
+    }
+    .homePageScreen{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .homePageScreen .bio{
+        text-align: center;
+        width: 100%;
+    }
+    .homePageScreen .job{
+        text-align: center;
+    }
 }

@@ -1,14 +1,16 @@
 .patt{
-  transform: rotate(120deg) scale(1.1); 
+  transform: rotate(150deg) scale(0.7); 
   position: fixed;
-  bottom: 100px;
-  left: -690px;
+  bottom: -300px;
+  left: -400px;
   z-index: 1;
   opacity: 50%;
 
 }
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 760px) {
   .patt {
+    /* position: scroll; */
+    bottom: -50px;
     left: -300px;
     transform: rotate(120deg) scale(1.3);
   } 

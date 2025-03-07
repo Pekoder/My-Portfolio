@@ -27,6 +27,11 @@ function Nav() {
    }, []);
  
    const nav = !scrolled ? 500 : 300
+
+   const saveData = ()=>{
+    localStorage.setItem('scroll',scrolled)
+   }
+   saveData()
  
    return (
  <div>
