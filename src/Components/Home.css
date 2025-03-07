@@ -1,7 +1,7 @@
 .flexbx{
     justify-content: space-around;
     z-index: 2;
-    /* margin-top: 20px; */
+    padding-top: 80px;
 }
 .homePageScreen .bio{
     letter-spacing: 0.5px;
