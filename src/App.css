@@ -1,19 +1,6 @@
-.patt{
-  transform: rotate(150deg) scale(0.7); 
-  position: fixed;
-  bottom: -300px;
-  left: -400px;
-  z-index: 1;
-  opacity: 50%;
 
-}
 @media screen and (max-width: 760px) {
-  .patt {
-    /* position: scroll; */
-    bottom: -50px;
-    left: -300px;
-    transform: rotate(120deg) scale(1.3);
-  } 
+
 }
  body{
   background-color: #032b44;
@@ -36,5 +23,6 @@
   height: 100%;
   background: linear-gradient(to bottom, #032b44d4, rgba(0, 0, 0, 1.9));
   z-index: 0;
-  pointer-events: none;
+  /* pointer-events: none; */
+
  }

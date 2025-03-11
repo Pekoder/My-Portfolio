@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { useState } from "react";
 import './Nav.css'
 import { Menu, X } from "lucide-react";
@@ -6,8 +6,6 @@ import { motion } from "framer-motion";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
- 
- 
    const [scrolled, setScrolled] = useState(false);
  
    useEffect(() => {
@@ -32,7 +30,7 @@ function Nav() {
     localStorage.setItem('scroll',scrolled)
    }
    saveData()
- 
+
    return (
  <div>
          <nav className={`fixed w-full ${ !scrolled ? ('bg-[#00000000]') : ('bg-[#00acc1af]' || 'shadow-md') }  p-4 z-50`}>
@@ -41,12 +39,24 @@ function Nav() {
              
              {/* Desktop Menu */}
              <ul className="hidden md:flex gap-5 ">
-               <li><a href="#home" className={ ` text-cyan-${nav} hover:text-cyan-200`}>Home</a></li>
-               <li><a href="#aboutMe" className={`text-cyan-${nav} hover:text-cyan-200`} >About Me</a></li>
-               <li><a href="#services" className={`text-cyan-${nav} hover:text-cyan-200`} >Services</a></li>
-               <li><a href="#projects" className={`text-cyan-${nav} hover:text-cyan-200`} >Projects</a></li>
-               <li><a href="#testimonial" className={`text-cyan-${nav} hover:text-cyan-200`} >Testimonial</a></li>
-               <li><a href="#contact" className={`text-cyan-${nav} hover:text-cyan-200`} >Contact</a></li>
+               <li><a href="#home" 
+               onClick={() => document.getElementById("home").scrollIntoView({ behavior: "smooth" })}
+               className={ ` text-cyan-${nav} hover:text-cyan-200`}>Home</a></li>
+               <li ><a 
+                   onClick={() => document.getElementById("about").scrollIntoView({ behavior: "smooth" })}
+               className={`text-cyan-${nav} hover:text-cyan-200`} >About Us</a></li>
+               <li><a href="#services" className={`text-cyan-${nav} hover:text-cyan-200`} 
+               onClick={() => document.getElementById("services").scrollIntoView({ behavior: "smooth" })}
+               >Services</a></li>
+               <li><a href="#projects" 
+               onClick={() => document.getElementById("projects").scrollIntoView({ behavior: "smooth" })}
+               className={`text-cyan-${nav} hover:text-cyan-200`} >Projects</a></li>
+               <li><a href="#testimonial" className={`text-cyan-${nav} hover:text-cyan-200`} 
+               onClick={() => document.getElementById("testimonial").scrollIntoView({ behavior: "smooth" })}
+               >Testimonial</a></li>
+               <li><a href="#contact" 
+               onClick={() => document.getElementById("contact").scrollIntoView({ behavior: "smooth" })}
+               className={`text-cyan-${nav} hover:text-cyan-200`} >Contact</a></li>
              </ul>
      
              {/* Mobile Menu Button */}
@@ -68,9 +78,15 @@ function Nav() {
                  <X size={25} className="text-cyan-300 hover:text-cyan-100"/>
                </button>
                <ul className="mt-12 flex flex-col gap-6">
-               <li><a href="#home" className="text-cyan-900 hover:text-cyan-200">Home</a></li>
-               <li><a href="#aboutMe" className="text-cyan-900 hover:text-cyan-200">About Me</a></li>
-               <li><a href="#services" className="text-cyan-900 hover:text-cyan-200">Services</a></li>
+               <li><a href="#home" className="text-cyan-900 hover:text-cyan-200"
+               onClick={() => document.getElementById("home").scrollIntoView({ behavior: "smooth" })}
+               >Home</a></li>
+               <li><a href="#aboutMe" className="text-cyan-900 hover:text-cyan-200"
+               onClick={() => document.getElementById("about").scrollIntoView({ behavior: "smooth" })}
+               >About Us</a></li>
+               <li><a href="#services" className="text-cyan-900 hover:text-cyan-200"
+               onClick={() => document.getElementById("services").scrollIntoView({ behavior: "smooth" })}
+               >Services</a></li>
                <li><a href="#projects" className="text-cyan-900 hover:text-cyan-200">Projects</a></li>
                <li><a href="#testimonial" className="text-cyan-900 hover:text-cyan-200">Testimonial</a></li>
                <li><a href="#contact" className="text-cyan-900 hover:text-cyan-200">Contact</a></li>
