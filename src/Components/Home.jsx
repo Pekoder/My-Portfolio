@@ -10,7 +10,7 @@ function Home() {
        <div className="gradient-overlay"></div>
        <img 
         src={pattern} className="patt" alt="" />
-      <motion.div
+      <motion.div 
         initial={{ y: "50%", opacity: 0 }}
         animate={{ y: "0%", opacity: 1 }}
         exit={{ y: "100%" }}
@@ -18,7 +18,7 @@ function Home() {
         className="flexbx relative pt-50p text-white top-0 right-0 w-full overflow-hidden flex-col h-screen bg-[#00000000] flex md:flex-row justify-between items-center "
       >
         <div className="homePageScreen">
-          <h1 className="text-lg text-cyan-500">Hi, I am</h1>
+          <h1 className="text-lg text-cyan-500 iAm">Hi, I am</h1>
           <h1 className="text-3xl text-cyan-300">Ibikunle Peace</h1>
           <h1 className="job text-4xl leading-[1.2] md:text-[40px] font-black text-white l">
             Graphics
@@ -32,7 +32,17 @@ function Home() {
           </h1>
           {/* <div className="button"> */}
 
-            <button className="button">Hire me</button>
+            <button className="button">
+            <a 
+  href="https://wa.me/2349158611048?text=Hello,%20I%20am%20%20--------------%20interested%20in%20your%20services!" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  
+>
+Hire me
+</a>
+
+            </button>
           {/* </div> */}
         </div>
         <div className="profilePic">

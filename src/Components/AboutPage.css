@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
 body{
-    height: 50vh;
+    height: 90vh;
     width: 100vw;
     overflow-x: hidden;
     margin-bottom: 5000px;
@@ -9,9 +11,9 @@ body{
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    height: 50vh;
+    height: 100%;
     overflow-x: hidden;
-    padding:0 90px;
+    padding:80px 90px;
     color: #084a6e;
     opacity: 1;
     z-index: 30;
@@ -20,10 +22,17 @@ body{
 }
 .aboutPage h1{
     font-size: 2rem;
+    font-family: "Exo", sans-serif;
     font-weight: 600;
     border-radius: 5px;
     padding:5px 10px;
-    border: 1px solid #084a6e;
+    border: 1px solid #052c42;
+    margin-bottom: 10px;
+}
+.aboutPage p{
+    /* font-size: 1.2rem; */
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 400;
     margin-bottom: 10px;
 }
 @media screen and (max-width: 768px){
@@ -34,7 +43,7 @@ body{
         flex-direction: column;
         height: 70vh;
         /* padding:50px 90px; */
-        padding-top: 200px;
+        padding-top: 100px;
         padding-bottom: 50px;
 
     }
