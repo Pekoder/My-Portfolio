@@ -48,7 +48,8 @@ Hire me
         <div className="profilePic">
           
                 <img class="circle" 
-                src={img}/>
+                src={img}
+                loading="lazy"/>
                 <div className="cover"></div>
         </div>
       </motion.div>

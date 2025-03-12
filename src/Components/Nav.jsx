@@ -24,7 +24,7 @@ function Nav() {
      };
    }, []);
  
-   const nav = !scrolled ? 500 : 300
+   const nav = !scrolled ? 500 : 100
 
    const saveData = ()=>{
     localStorage.setItem('scroll',scrolled)
@@ -33,7 +33,7 @@ function Nav() {
 
    return (
  <div>
-         <nav className={`fixed w-full ${ !scrolled ? ('bg-[#00000000]') : ('bg-[#00acc1af]' || 'shadow-md') }  p-4 z-50`}>
+         <nav className={`fixed w-full ${ !scrolled ? ('bg-[#00000000]') : ('bg-[#00acc1aa]' || 'shadow-md') }  p-4 z-50`}>
            <div className="container mx-auto flex justify-between items-center md:justfy-between">
              <h1 className= {`text-l font-semibold text-cyan-${nav} ` }>PEKAN VISUALS</h1>
              

@@ -3,6 +3,39 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
     width: 100vw;
     height: 90vh;
+    color: white;
 }
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding:30px 90px;
+}
+.service{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.services h1{
+    font-size: 2rem;
+    font-family: "Exo", sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    padding:5px 10px;
+    border: 1px solid #4AB7F2;
+    margin-bottom: 10px;
+}
+.gradientz-overlay{
+    position: absolute;
+    top: 155vh;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(to bottom, #032b44d4, rgba(0, 0, 0, 1.9));
+    z-index: -1;
+    /* pointer-events: none; */
+  
+   }

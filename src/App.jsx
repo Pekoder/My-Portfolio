@@ -5,7 +5,9 @@ import vid from "./three.mp4";
 import Nav from "./Components/Nav";
 import Home from "./Components/Home";
 import AboutPage from "./Components/AboutPage";
+import Services from "./Components/Services"
 import { Analytics } from "@vercel/analytics/react"
+
 
 function App() {
 
@@ -32,6 +34,7 @@ function App() {
         <Nav />
         <Home  />
         <AboutPage  />
+        <Services />
       </div>
     </>
   );

@@ -1,11 +1,26 @@
 import React from 'react'
 import './AboutPage.css'
-// import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 function AboutPage() {
+  const { scrollY } = useScroll();
+  const y = useTransform(scrollY, [200, 300], [80,-20]);  
+  
+  
   return (
   <>
-<div className='aboutPage' id='about'>
+<div id='about'>
+<div className="gradients-overlay"></div>
+<motion.div 
+        // initial={{ y: "50%", opacity: 0 }}
+        // animate={{ y: "0%", opacity: 1 }}
+        // exit={{ y: "100%" }}
+        // transition={{ type: "ease", duration: 0.7 }}
+        style={{y}}
+  
+        className='aboutPage'
+      >
+
 
 <h1>About Us</h1>
 <p className="aboutUs">
@@ -21,6 +36,7 @@ At Pekan Visuals, we believe in the power of creativity, collaboration, and atte
 Get in touch with us today to discover how we can help elevate your brand's visual identity and take your business to the next level.
 </p>
  
+      </motion.div>
 </div>
   </>
   )
