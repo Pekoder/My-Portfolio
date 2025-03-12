@@ -1,7 +1,6 @@
 import React from "react";
 import "./Home.css";
 import pattern from "../bgpat.svg";
-import img from './set.png'
 import { motion } from "framer-motion";
 
 function Home() {
@@ -24,7 +23,7 @@ function Home() {
             Graphics
             <br /> Designer & Frontend <br /> Developer
           </h1>
-          <h1 className="bio text-sm md:text-[19px] font-light text-cyan-500 leading-[1.1]">
+          <h1 className="bio text-sm md:text-[19px] font-light text-[#4AB7F2] leading-[1.1]">
             Results-driven Graphic Designer and Frontend Developer, crafting
             visually stunning and intuitive web applications. With expertise in
             HTML5, CSS3, JavaScript, React, and Tailwind CSS, I bring ideas to
@@ -48,7 +47,7 @@ Hire me
         <div className="profilePic">
           
                 <img class="circle" 
-                src={img}
+                src='https://res.cloudinary.com/dakcu0sng/image/upload/v1741779701/qlxb1ag9a4syf25waqcl.png'
                 loading="lazy"/>
                 <div className="cover"></div>
         </div>

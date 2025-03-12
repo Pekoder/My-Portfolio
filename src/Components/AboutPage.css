@@ -14,19 +14,22 @@ body{
     height: 100%;
     overflow-x: hidden;
     padding:80px 90px;
-    color: #084a6e;
+    /* color: #084a6e; */
+    color: #4AB7F2;
     opacity: 1;
     z-index: 30;
-    background-color:#4AB7F2;
-    border-top: 3px solid #022538;
-}
+    background-color:#022538;
+    /* border-top: 5px solid #022538; */
+    border-top: 5px solid #4AB7F2;
+} 
 .aboutPage h1{
     font-size: 2rem;
     font-family: "Exo", sans-serif;
     font-weight: 600;
     border-radius: 5px;
     padding:5px 10px;
-    border: 1px solid #052c42;
+    border: 1px solid #4AB7F2;
+    /* border: 1px solid #052c42; */
     margin-bottom: 10px;
 }
 .aboutPage p{

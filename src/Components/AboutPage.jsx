@@ -4,9 +4,9 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 function AboutPage() {
   const { scrollY } = useScroll();
-  const y = useTransform(scrollY, [200, 300], [80,-20]);  
+  const y = useTransform(scrollY, [200, 500], [100,-20]);  
   
-  
+   
   return (
   <>
 <div id='about'>

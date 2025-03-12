@@ -11,15 +11,20 @@ body{
 .services{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     /* justify-content: space-between; */
     padding:30px 90px;
 }
 .service{
+
     display: grid;
+    gap: 15px;
     grid-template-columns: repeat(3,1fr);
+    margin-top: 20px;
+   justify-content: center;
+   width: 100%;
 }
-.services h1{
+.services .s{
     font-size: 2rem;
     font-family: "Exo", sans-serif;
     font-weight: 600;
@@ -28,14 +33,52 @@ body{
     border: 1px solid #4AB7F2;
     margin-bottom: 10px;
 }
+.serviceContainer{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+
+
+    background-color: #052c42;
+    border-radius: 5px;
+    padding: 35px;
+    font-family: "Titillium Web", sans-serif;
+    
+}
+.serviceContainer .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #052c42;
+    font-size: 2rem;
+    background-color: white;
+    width: 50px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.serviceContainer .serviceName{
+    align-items:start;
+}
+.serviceContainer .serviceName h1{
+    font-family:  "Exo", sans-serif;
+    font-size: 1.5rem;
+font-weight: 600;
+color: #4AB7F2;
+}
+.serviceContainer .skills{
+margin-top: 5px;
+}
 .gradientz-overlay{
     position: absolute;
     top: 155vh;
     left: 0;
     width: 100%;
-    height: 70%;
+    height: 170%;
     background: linear-gradient(to bottom, #032b44d4, rgba(0, 0, 0, 1.9));
     z-index: -1;
-    /* pointer-events: none; */
-  
+
+   }
+   @media screen and (max-width:850px){
+    .service{
+        grid-template-columns: repeat(1,1fr);    }
    }

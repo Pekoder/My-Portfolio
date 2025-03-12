@@ -7,6 +7,7 @@ import Home from "./Components/Home";
 import AboutPage from "./Components/AboutPage";
 import Services from "./Components/Services"
 import { Analytics } from "@vercel/analytics/react"
+import Projects from "./Components/Projects";
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         <Home  />
         <AboutPage  />
         <Services />
+        <Projects />
       </div>
     </>
   );
