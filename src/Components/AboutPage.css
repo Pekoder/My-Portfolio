@@ -4,23 +4,23 @@ body{
     height: 95vh;
     width: 100vw;
     overflow-x: hidden;
-    margin-bottom: 5000px;
+    margin-bottom: 100px;
 }
 .aboutPage{
     display: flex;
     justify-content: center;
     align-items: start;
     flex-direction: column;
+    width: 100vw;
     height: 100%;
     overflow-x: hidden;
-    padding:80px 90px;
-    /* color: #084a6e; */
+    padding:80px 60px;
     color: #4AB7F2;
     opacity: 1;
     z-index: 30;
     background-color:#022538;
-    /* border-top: 5px solid #022538; */
     border-top: 5px solid #4AB7F2;
+    scrollbar-width: none;
 } 
 .aboutPage h1{
     font-size: 2rem;

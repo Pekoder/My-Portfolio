@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.gradientzz-overlay {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 100%;
+    height: 170%;
+    background: linear-gradient(to top, #032b44d4, rgba(0, 0, 0, 1.9));
+    z-index: -1;
+  }
+.projects h1{
+    font-size: 2rem;
+    font-family: "Exo", sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    padding:5px 10px;
+    color: #4AB7F2;
+    border: 1px solid #4AB7F2;
+    margin-bottom: 10px;
+}
+.projects{
+    padding: 80px 60px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 100vw;
+}
+.descrip{
+    font-weight: 200;
+}
+.categoryButton{
+    border-radius: 3px 8px;
+}
+.projectBox {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+   .projectBox {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        width: 100%;
+    }
+}

@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 function Home() {
   return (
-    <div className="h-screen w-full px-10 md:pl-[80px]" id="home">
+    <div className="h-screen w-full px-8 md:pl-[60px]" id="home">
        <div className="gradient-overlay"></div>
        <img 
         src={pattern} className="patt" alt="" />
@@ -17,8 +17,8 @@ function Home() {
         className="flexbx relative pt-50p text-white top-0 right-0 w-full overflow-hidden flex-col h-screen bg-[#00000000] flex md:flex-row justify-between items-center "
       >
         <div className="homePageScreen">
-          <h1 className="text-lg text-cyan-500 iAm">Hi, I am</h1>
-          <h1 className="text-3xl text-cyan-300">Ibikunle Peace</h1>
+          <h1 className="text-lg text-[#45abe2] iAm">Hi, I am</h1>
+          <h1 className="text-3xl text-[#4AB7F2]">Ibikunle Peace</h1>
           <h1 className="job text-4xl leading-[1.2] md:text-[40px] font-black text-white l">
             Graphics
             <br /> Designer & Frontend <br /> Developer

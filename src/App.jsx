@@ -26,9 +26,7 @@ function App() {
 
   return (
     <>
-      <div>
-       
-        {/* <div className="gradient-overlay"></div> */}
+      <div className="w-full " >
         <video autoPlay loop muted className="bg-vid">
           <source src={vid} type="video/mp4" />
         </video>

@@ -37,7 +37,7 @@ function Nav() {
 
           {/* Mobile Menu Button */}
           <button className="md:hidden" onClick={() => setIsOpen(true)}>
-            <Menu size={25} className="text-blue-300 hover:text-blue-100" />
+            <Menu size={25} className={`${scrolled ? 'text-[#022538]' : 'text-[#4AB7F2]'} hover:text-blue-100 `}/>
           </button>
         </div>
 
@@ -48,10 +48,10 @@ function Nav() {
             animate={{ x: 0, opacity: 0.95 }}
             exit={{ x: "100%" }}
             transition={{ type: "tween", duration: 0.3 }}
-            className="fixed top-0 right-0 w-64 h-full bg-[#00acc1] shadow-lg p-6 md:hidden"
+            className="fixed top-0 right-0 w-64 h-full bg-[#4AB7F2EE] shadow-lg p-6 md:hidden"
           >
             <button className="absolute top-4 right-4" onClick={() => setIsOpen(false)}>
-              <X size={25} className="text-blue-300 hover:text-blue-100" />
+              <X size={25} className="text-[#022538] hover:text-blue-300" />
             </button>
             <ul className="mt-12 flex flex-col gap-6">
               <li><a href="#home" className="text-blue-900 hover:text-blue-200" onClick={() => document.getElementById("home").scrollIntoView({ behavior: "smooth" })}>Home</a></li>
