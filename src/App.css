@@ -5,7 +5,7 @@
 }
 body {
   background-color: #032b44;
-  min-width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
   overflow-x: hidden;
 }

@@ -4,6 +4,16 @@ body {
   height: 100vh;
   width: 100vw;
 }
+.patt {
+  
+  transform: rotate(150deg) scale(0.7);
+  position: fixed;
+  bottom: -300px;
+  left: -400px;
+  z-index: -1;
+  opacity: 100%;
+  width: 100%;
+}
 .flexbx {
   justify-content: space-around;
   z-index: 2;
@@ -69,14 +79,6 @@ body {
   height: 150%;
   background: linear-gradient(to bottom, #032b44d4, rgba(0, 0, 0, 1.9));
   z-index: 0;
-}
-.patt {
-  transform: rotate(150deg) scale(0.7);
-  position: absolute;
-  bottom: -300px;
-  left: -400px;
-  z-index: -1;
-  opacity: 100%;
 }
 @media screen and (max-width: 760px) {
   .flexbx {

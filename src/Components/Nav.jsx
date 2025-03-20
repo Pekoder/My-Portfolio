@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
+import lg from '../light.png'
+import dk from '../dark.png'
 import './Nav.css';
 
 function Nav() {
@@ -19,11 +21,18 @@ function Nav() {
     };
   }, []);
 
+  const logo =(scrolled && dk) || (!scrolled && lg)
+  console.log(logo)
   return (
     <div>
       <nav className={`fixed w-screen ${scrolled ? 'bg-[#4AB7F2EE] shadow-md' : 'bg-transparent'} p-4 z-50`}>
         <div className="container mx-auto flex justify-between items-center md:justify-between">
-          <h1 className={`text-l font-semibold ${scrolled ? 'text-[#022538]' : 'text-[#4AB7F2]'}`}>PEKAN VISUALS</h1>
+          <h1 className={`text-l font-semibold ${scrolled ? 'text-[#022538]' : 'text-[#4AB7F2]'}`}>
+            <img src={logo} alt="" />
+            <div>
+            PEKAN VISUALS
+            </div>
+           </h1>
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex gap-5">

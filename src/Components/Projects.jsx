@@ -1,5 +1,4 @@
 import React from "react";
-import SMD1 from './Designs/March First Sunday Flyer.png'
 import { useState, useEffect } from 'react';
 import "./Projects.css";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -7,14 +6,14 @@ import { AnimatePresence } from "framer-motion";
 
 const projects = [
   { id: 1, title: "Profile Card Design", category: "Web Design", image: 'https://res.cloudinary.com/dakcu0sng/image/upload/v1741914090/prr9vg0f9pj0yvoi7mpr.png', description: "A sleek profile card design. " },
-  { id: 7, title: "Ticket Generator", category: "Web Design", image: "https://res.cloudinary.com/dakcu0sng/image/upload/v1741914498/mwcxeqv0wsornxq0myrw.png", description: "A personal portfolio website showcasing creative works." },
-  { id: 7, title: "Portfolio Website", category: "Web Design", image: "https://res.cloudinary.com/dakcu0sng/image/upload/v1741915080/oe5w7wda3bjmx1beug5s.png", description: "A personal portfolio website showcasing creative works." },
-  { id: 2, title: "Social Media Design", category: "Graphic Design", image:'https://res.cloudinary.com/dakcu0sng/image/upload/v1741911063/utsw0klbcifjiaybthog.png', description: "A water effect social media design." },
-  { id: 3, title: "Social Media Design", category: "Graphic Design", image:'https://res.cloudinary.com/dakcu0sng/image/upload/v1741911083/cwycxsrvowlg8reotmat.jpg', description: "A water effect social media design." },
-  { id: 4, title: "New Month Design", category: "Graphic Design", image:'https://res.cloudinary.com/dakcu0sng/image/upload/v1741911141/l2gu68ygdxb2tkp1evkl.jpg', description: "A water effect social media design." },
-  { id: 4, title: "New Month Design", category: "Graphic Design", image:'https://res.cloudinary.com/dakcu0sng/image/upload/v1741911130/ydyrkh5qwwcjs21g6x4y.jpg', description: "A water effect social media design." },
-  { id: 5, title: "Food Flyer Design", category: "Graphic Design", image:'https://res.cloudinary.com/dakcu0sng/image/upload/v1741911112/ioowrqbhxwgwaklqcfio.jpg', description: "A water effect social media design." },
-  { id: 5, title: "Farm Design", category: "Graphic Design", image:'https://res.cloudinary.com/dakcu0sng/image/upload/v1741913402/gvytfnbksp1a4afvbozj.png', description: "A water effect social media design." },
+  { id: 2, title: "Ticket Generator", category: "Web Design", image: "https://res.cloudinary.com/dakcu0sng/image/upload/v1741914498/mwcxeqv0wsornxq0myrw.png", description: "A personal portfolio website showcasing creative works." },
+  { id: 3, title: "Portfolio Website", category: "Web Design", image: "https://res.cloudinary.com/dakcu0sng/image/upload/v1741915080/oe5w7wda3bjmx1beug5s.png", description: "A personal portfolio website showcasing creative works." },
+  { id: 4, title: "Social Media Design", category: "Graphic Design", image:'https://res.cloudinary.com/dakcu0sng/image/upload/v1741911063/utsw0klbcifjiaybthog.png', description: "A water effect social media design." },
+  { id: 5, title: "Social Media Design", category: "Graphic Design", image:'https://res.cloudinary.com/dakcu0sng/image/upload/v1741911083/cwycxsrvowlg8reotmat.jpg', description: "A water effect social media design." },
+  { id: 6, title: "New Month Design", category: "Graphic Design", image:'https://res.cloudinary.com/dakcu0sng/image/upload/v1741911141/l2gu68ygdxb2tkp1evkl.jpg', description: "A water effect social media design." },
+  { id: 7, title: "New Month Design", category: "Graphic Design", image:'https://res.cloudinary.com/dakcu0sng/image/upload/v1741911130/ydyrkh5qwwcjs21g6x4y.jpg', description: "A water effect social media design." },
+  { id: 8, title: "Food Flyer Design", category: "Graphic Design", image:'https://res.cloudinary.com/dakcu0sng/image/upload/v1741911112/ioowrqbhxwgwaklqcfio.jpg', description: "A water effect social media design." },
+  { id: 9, title: "Farm Design", category: "Graphic Design", image:'https://res.cloudinary.com/dakcu0sng/image/upload/v1741913402/gvytfnbksp1a4afvbozj.png', description: "A water effect social media design." },
   // { id: 8, title: "Mobile Banking App", category: "Logo Design", image: "banking.jpg", description: "A secure and user-friendly mobile banking application." },
 ];
 
